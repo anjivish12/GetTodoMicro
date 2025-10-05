@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todo-get-s
+spec:
+  type: LoadBalancer
+  selector:
+    app: todo-get
+  ports:
+  - port: 80
+    targetPort: 80
